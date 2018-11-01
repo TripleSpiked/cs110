@@ -11,8 +11,8 @@
 
  <path id="classpath.test">
   <fileset dir="." includes="**/*.jar" />
-  <pathelement location="lib/junit-4.11.jar" />
-  <pathelement location="lib/hamcrest-core-1.3.jar" />
+  <pathelement location="src/edu/ucsd/cs110/temperature/lib/junit-4.11.jar" />
+  <pathelement location="src/edu/ucsd/cs110/temperature/lib/hamcrest-core-1.3.jar" />
   <pathelement location="${main.build.dir}"/>
   <path refid="classpath.base" />
  </path>
@@ -30,8 +30,8 @@
   <mkdir dir="${test.build.dir}"/>
   <javac srcdir="${test.src.dir}" destdir="${test.build.dir}" includeantruntime="false">
    <!-- Make sure these two libraries are included -->
-   <classpath location="lib/junit-4.11.jar" />
-   <classpath location="lib/hamcrest-core-1.3.jar" />
+   <classpath location="src/edu/ucsd/cs110/temperature/lib/junit-4.11.jar" />
+   <classpath location="src/edu/ucsd/cs110/temperature/lib/hamcrest-core-1.3.jar" />
    <classpath refid="classpath.test"/>
   </javac>
   <echo message="Build done" />
